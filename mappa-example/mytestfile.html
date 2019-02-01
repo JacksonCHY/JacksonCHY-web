@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Basic Mappa Tutorial</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/mappa-mundi/dist/mappa.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <script>
+let myMap;
+let canvas;
+const mappa = new Mappa('Leaflet');
+
+// Lets change the map tiles to something with more contrast
+const options = {
+  lat: 49.2606,
+  lng: -123.2460,
+  zoom: 3,
+  style: "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}{r}.png"
+
+}
+
+function setup(){
+  canvas = createCanvas(640,640);
+  myMap = mappa.tileMap(options);
+  myMap.overlay(canvas)
+
+  // Load the data
+  meteorites = loadTable('Meteorite_Landings.csv', 'csv', 'header');
+
+  // Only redraw the meteorites when the map change and not every frame.
+  myMap.onChange(drawMeteorites);
+
+}
+
+function draw(){
+var size = 20;
+fill(255,214,5);
+Stroke(2);
+}
+
+// Draw the meteorites
+function drawMeteorites() {
+  // Clear the canvas
+  clear();
+
+  for (let i = 0; i < meteorites.getRowCount(); i++) {
+    // Get the lat/lng of each meteorite
+    const latitude = Number(meteorites.getString(i, 'reclat'));
+    const longitude = Number(meteorites.getString(i, 'reclong'));
+
+    if (myMap.map.getBounds().contains({lat: latitude, lng: longitude})) {
+
+      const pos = myMap.latLngToPixel(latitude, longitude);
+
+      let size = meteorites.getString(i, 'mass (g)');
+      size = map(size, 558, 60000000, 1, 25) + myMap.zoom();
+      ellipse(pos.x, pos.y, size, size);
+    }
+  }
+}
+
+ </script>
+</body>
+
+</html>
