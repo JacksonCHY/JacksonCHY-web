@@ -3,7 +3,7 @@ Talk a little bit about this project…
 1.	Screenshot:
 ![alt text][logo]
 
-[logo]: https://github.com/JacksonCHY-web/Web-mapping/Excerpt.png "Excerpt Of My Map"
+[logo]: https://github.com/JacksonCHY/JacksonCHY-web/blob/master/Web-mapping/Excerpt.png "Excerpt Of My Map"
 
       
 2.	Reflective Analysis: 
