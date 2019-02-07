@@ -1,7 +1,10 @@
 Talk a little bit about this project… 
 
 1.	Screenshot:
-![alt text](https://github.com/JacksonCHY-web/Web-mapping/Excerpt.png "Excerpt of my map")
+![alt text][logo]
+
+[logo]: https://github.com/JacksonCHY-web/Web-mapping/Excerpt.png "Excerpt Of My Map"
+
       
 2.	Reflective Analysis: 
 
