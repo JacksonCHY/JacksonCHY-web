@@ -1,6 +1,7 @@
 Talk a little bit about this project… 
 
 1.	Screenshot:
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 2.	Reflective Analysis: 
 
