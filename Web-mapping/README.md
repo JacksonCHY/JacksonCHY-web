@@ -1,7 +1,7 @@
 Talk a little bit about this project… 
 
 1.	Screenshot:
-![alt text](https://github.com/JacksonCHY-web/Web-mapping/Screen Shot 2019-02-07 at 2.19.51 PM.png "Excerpt of my map")
+![alt text](https://github.com/JacksonCHY-web/Web-mapping/Excerpt.png "Excerpt of my map")
       
 2.	Reflective Analysis: 
 
