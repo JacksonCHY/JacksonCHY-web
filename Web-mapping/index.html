@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>NEFC Neighbourhood Public Arts Finder</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='map'></div>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiamF4c29uY2h5IiwiYSI6ImNqcnU0cXNwczBpeHgzeW8wZ3c1MjlweW0ifQ.zucGQXtTo7fAiblD5zZiHg'; // replace this with your access token
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/jaxsonchy/cjrs3xz2r0ati2so701sghdkj', // replace this with your style URL
+      center: [-123.109, 49.277],
+      zoom: 14.5
+    });
+    map.on('click', function(e) {
+  var features = map.queryRenderedFeatures(e.point,{
+    layers: ['nefc-public-arts-establishments']
+
+  });
+
+  if (!features.length) {
+    return;
+  }
+
+  var feature = features[0];
+
+  var popup = new mapboxgl.Popup({ offset: [0, -10] })
+    .setLngLat(feature.geometry.coordinates)
+    .setHTML('<h3>' + feature.properties.Name + '</h3><p>' + feature.properties.Artists + '</p>' + feature.properties.Location + '</p>' + feature.properties.Place + '</p>' + feature.properties.Year + '</p>' + feature.properties.Description + '</p>' )
+    .setLngLat(feature.geometry.coordinates)
+    .addTo(map);
+
+});
+// code from the next step will go here
+    </script>
+  </body>
+</html>
