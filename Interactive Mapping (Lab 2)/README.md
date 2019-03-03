@@ -29,12 +29,13 @@ I have to admit that it wasn’t an easy-peasy process for design and visualized
 One accomplishment/challenge I took on was adding the interactive features to the point symbols. Each single public arts establishment obtained a pop-up window that has facts about their name, artist(s), location, installed year and a brief information. Through this lab exercise, I gained further knowledge and experiences in JavaScript and HTML writing on the Atom text editor and strengthened my cartographic design skill with the user-friendly Mapbox Studio. By studying more advance coding technique as well as the Leaflet, I believe we can create more powerful and sophisticating maps as the course goes on!
 Cheers!
 
-#### Map Critiques
+#### Collaborations and reliance on other resources
 One of the biggest regrets in this assignment is I have yet to figure out how to add interactivity on my polygon features (i.e. the land use property). This may require further practices and knowledge exchange with like-minded peers and classmates. From the discussions with my friend Carolina and few other students, I have learned quite a bit from them as in terms of styling layers. Meanwhile, I also received some valuable feedbacks as I summarized below: 
 
-1.	Although the original intentions are good, the context area is not large enough for further applications. 
-2.	Need to fix the pop-up position of textboxes, some goes over the map boundary.
-3.	The legend can be useful since the polygon interactivity is not available. 
+Data Sources: 
+1. [Vancouver Schools] (http://hub.arcgis.com/datasets/80dc363cffa84820ad015fb33e456407_0).
+2. [Vancouver Libraries] (http://hub.arcgis.com/datasets/56825b80e6fc406988332c3a933efc31_0)
+ 
 
 ##### Link to the map: 
 https://jacksonchy.github.io/JacksonCHY-web/Interactive%20Mapping%20(Lab%202)/index.html
