@@ -5,7 +5,7 @@
 
 ![alt text][logo]
 
-[logo]:https://github.com/JacksonCHY/JacksonCHY-web/Interactive_Mapping_(Lab_2)/Overview.png "Public Library Finder for Vancouver Public Schools"
+[logo]:https://github.com/JacksonCHY/JacksonCHY-web/Interactive%Mapping%(Lab%2)/Overview.png "Public Library Finder for Vancouver Public Schools"
 #### Reflective Analysis: 
 
 Hello fellow classmates/Professor B./world! 
