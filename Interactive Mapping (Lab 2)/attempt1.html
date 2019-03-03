@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leaflet Exercise</title>
+	<meta charset="utf-8" />
+
+	<!-- Leaflet styles and code. Place in the <head></head> element. -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+	<!-- jQuery is a library that simplifies many things in JavaScript.
+	     We'll use it to retrieve data from the web. -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+
+  <div id="map"style="width: 1700px; height: 700px;"></div>
+  <div id="controls" style="margin:15px;">
+	<button id="meow">Your nearest transit stop</button>
+  </div>
+
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiamF4c29uY2h5IiwiYSI6ImNqc28yYjhnMzBpYWU0M28ydW0xcmQ1b28ifQ.je2CkUzPjmuDn8k1cYXY7A';
+    var map = L.map('map',
+                    {
+      								center: [49.26, -123.238],
+      								zoom: 14
+    								}
+              );
+		var topoTiles = L.tileLayer(
+      								'https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png',
+                      {
+												maxZoom: 18,
+												attribution: '<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+											}
+										).addTo(map);
+		function getColor(d) {
+												return d == 'Polygon' ? '#fab95b':
+											     		 d == 'MultiPolygon' ? '#fab95b':
+
+												'fab95b';
+														 };
+		function style(d) {
+							return {
+															fillColor: getColor(d.geometry.type),
+															weight: 1,
+															opacity: 1,
+															color: '000000',
+															dashArray: '10',
+															fillOpacity: 1
+															}
+												};
+    var buildinglocations
+					$.getJSON("https://raw.githubusercontent.com/UBCGeodata/ubcv-buildings/master/geojson/ubcv_buildings.geojson",
+			              function(data){
+			    						L.geoJson(data, {style:style}).addTo(map);
+										}
+			             );
+
+    var carShare
+         $.getJSON("https://raw.githubusercontent.com/JacksonCHY/JacksonCHY-web/master/Travel%20Options/Bus_Stops.geojson",
+                   function(data){
+                     L.geoJson(data, {style:style}).addTo(map);
+                   }
+                  );
+
+    var busStops
+        $.getJSON("https://raw.githubusercontent.com/JacksonCHY/JacksonCHY-web/master/Travel%20Options/Carshare.geojson",
+                  function(data){
+                    L.geoJson(data, {style:style}).addTo(map);
+                  }
+                 );
+
+ map.on('load', function() {
+   map.addLayer({
+     id: 'carShare',
+     type: 'symbol',
+     source: {
+       type: 'geojson',
+       data: carShare
+     },
+     layout: {
+       'icon-image': 'bus-15'
+     },
+     paint: { }
+   });
+   map.addLayer({
+     id: 'busStops',
+     type: 'symbol',
+     source: {
+       type: 'geojson',
+       data: busStops
+     },
+     layout: {
+       'icon-image': 'car-15'
+     },
+     paint: { }
+   });
+  map.addSource('nearest-carShare', {
+    type: 'geojson',
+    data: {
+      type: 'Feature',
+      features: [
+      ]
+    }
+  });
+  map.addSource('nearest-busStops', {
+   type: 'geojson',
+   data: {
+     type: 'FeatureCollection',
+     features: [
+     ]
+   }
+ });
+});
+var popup = new leafletjs.Popup();
+
+map.on('mousemove', function(e) {
+  var features = map.queryRenderedFeatures(e.point, { layers: ['carShare', 'busStops'] });
+  if (!features.length) {
+    popup.remove();
+    return;
+  }
+
+  var feature = features[0];
+
+  popup.setLngLat(feature.geometry.coordinates)
+  .setHTML(feature.properties.Name)
+  .addTo(map);
+
+  map.getCanvas().style.cursor = features.length ? 'pointer' : '';
+
+});
+
+map.on('click', function(e) {
+  var libraryFeatures = map.queryRenderedFeatures(e.polygons, { layers: ['buildinglocations'] });
+  if (!buildingFeatures.size) {
+    return;
+  }
+
+  var buildingFeature = buildingFeatures[0];
+
+  var nearestcarShare = turf.nearest(buildingFeature, carShare);
+
+  var nearestbusStops = turf.nearest(buildingFeature, busStops);
+
+  if (nearestcarShare !== null) {
+
+    map.getSource('nearest-carShare').setData({
+      type: 'Feature',
+      features: [nearestcarShare]
+    });
+
+    map.addLayer({
+      id: 'nearest-carShare',
+      type: 'circle',
+      source: 'nearest-carShare',
+      paint: {
+        'circle-radius': 12,
+        'circle-color': '#486DE0'
+      }
+    }, 'carShare');
+  }
+  if (nearestbusStops !== null) {
+
+    map.getSource('nearest-busStops').setData({
+      type: 'FeatureCollection',
+      features: [nearestbusStops]
+    });
+
+    map.addLayer({
+      id: 'nearest-busStops',
+      type: 'circle',
+      source: 'nearest-busStops',
+      paint: {
+        'circle-radius': 12,
+        'circle-color': '#486DE0'
+      }
+    }, 'busStops');
+  }
+});
+
+</script>
+</body>
+</html>
