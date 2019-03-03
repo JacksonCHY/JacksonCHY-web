@@ -33,8 +33,8 @@ Cheers!
 One of the biggest regrets in this assignment is I have yet to figure out how to add interactivity on my polygon features (i.e. the land use property). This may require further practices and knowledge exchange with like-minded peers and classmates. From the discussions with my friend Carolina and few other students, I have learned quite a bit from them as in terms of styling layers. Meanwhile, I also received some valuable feedbacks as I summarized below: 
 
 Data Sources: 
-1. [Vancouver Schools] (http://hub.arcgis.com/datasets/80dc363cffa84820ad015fb33e456407_0).
-2. [Vancouver Libraries] (http://hub.arcgis.com/datasets/56825b80e6fc406988332c3a933efc31_0)
+1. [Vancouver Schools](http://hub.arcgis.com/datasets/80dc363cffa84820ad015fb33e456407_0).
+2. [Vancouver Libraries](http://hub.arcgis.com/datasets/56825b80e6fc406988332c3a933efc31_0).
  
 
 ##### Link to the map: 
