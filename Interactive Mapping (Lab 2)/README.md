@@ -5,7 +5,7 @@
 
 ![alt text][logo]
 
-[logo]:https://github.com/JacksonCHY/JacksonCHY-web/blob/master/Interactive%20Mapping%20(Lab%202)/Excerpt.png "Public Library Finder for Vancouver Public Schools"
+[logo]:https://github.com/JacksonCHY/JacksonCHY-web/blob/master/Interactive%20Mapping%20(Lab%202)/Overview.png "Public Library Finder for Vancouver Public Schools"
 #### Reflective Analysis: 
 
 Hello fellow classmates/Professor B./world! 
@@ -21,7 +21,7 @@ For the first time, we self-learn to create a web-map so let’s give everyone a
 Besides the function of a citizen directory, the map also allows assists urban planners to figure out where to installed additional public arts in the future development. 
 I have to admit that it wasn’t an easy-peasy process for design and visualized your own idea on a website. During the map-making, I have involved in styling various map components including the font, labels, point symbols, background, land use and building eventually. Setting up the zooming features is particular important to construct an ‘information resolution’ in text labels, colour shift in background, and buildings appearance. When the map zoom out to a relatively small scale, viewers are not expecting overwhelming amount of information being present; on the contrary, the map shouldn’t lack of details as we zoom into larger scale. Reducing ‘noise’ on maps is another design principle I learned. The map creators are often deliberately hide or delete certain information in order to let viewers focus on specific subjects. For example, by get rid of the poi-label layers the graphic is cleaner and create less distraction hence my public arts symbols and land uses polygons able to stand out.
 
-![alt text](https://github.com/JacksonCHY/JacksonCHY-web/Interactive Mapping (Lab 2)/Excerpt.png "Excerpt Of My Map")
+![alt text](https://github.com/JacksonCHY/JacksonCHY-web/blob/master/Interactive%20Mapping%20(Lab%202)/Excerpt.png "Excerpt Of My Map")
 
 One accomplishment/challenge I took on was adding the interactive features to the point symbols. Each single public arts establishment obtained a pop-up window that has facts about their name, artist(s), location, installed year and a brief information. Through this lab exercise, I gained further knowledge and experiences in JavaScript and HTML writing on the Atom text editor and strengthened my cartographic design skill with the user-friendly Mapbox Studio. By studying more advance coding technique as well as the Leaflet, I believe we can create more powerful and sophisticating maps as the course goes on!
 Cheers!
@@ -34,4 +34,4 @@ One of the biggest regrets in this assignment is I have yet to figure out how to
 3.	The legend can be useful since the polygon interactivity is not available. 
 
 ##### Link to the map: 
-https://JacksonCHY.github.io/JacksonCHY-web/Interactive Mapping (Lab 2)/index.html
+https://jacksonchy.github.io/JacksonCHY-web/Interactive%20Mapping%20(Lab%202)/index.html
