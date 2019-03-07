@@ -1,0 +1,123 @@
+<!DOCTYPE html><html><head>
+    <title>deck.gl GeoJsonLayer (Polygon) Example</title>
+
+    <script src="deckgl.min.js"></script>
+
+    <script src="mapbox-gl.js"></script>
+
+    <style type="text/css">
+      body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+      }
+      #tooltip:empty {
+        display: none;
+      }
+      #tooltip {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 11px;
+        position: absolute;
+        padding: 4px;
+        margin: 8px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        max-width: 300px;
+        font-size: 10px;
+        z-index: 9;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="tooltip"></div>
+  
+
+  <script type="text/javascript">
+
+    const {DeckGL, GeoJsonLayer} = deck;
+
+    const LIGHT_SETTINGS = {
+      lightsPosition: [-125, 50.5, 5000, -122.8, 48.5, 8000],
+      ambientRatio: 0.2,
+      diffuseRatio: 0.5,
+      specularRatio: 0.3,
+      lightsStrength: [2.0, 0.0, 1.0, 0.0],
+      numberOfLights: 2
+    };
+
+    const COLOR_SCALE = [
+
+      [69, 117, 180],
+      [116, 173, 209],
+      [171, 217, 233],
+      [224, 243, 248],
+      [255, 255, 204],
+      [255,237,160],
+      [254,217,118],
+      [254,178,76],
+      [253,141,60],
+      [252,78,42],
+      [227,26,28],
+      [189,0,38],
+      [128,0,38],
+    ];
+
+    const geojsonLayer = new GeoJsonLayer({
+      data: 'https://raw.githubusercontent.com/UBCGeodata/ubcv-buildings/master/geojson/ubcv_building_records.geojson',
+      opacity: 0.8,
+      stroked: false,
+      filled: true,
+      extruded: true,
+      wireframe: true,
+      fp64: true,
+      lightSettings: LIGHT_SETTINGS,
+		
+    
+      getElevation: f => Math.sqrt(f.properties.COUNT_FLOORS) * 5,
+      getFillColor: f => colorScale(20190000 - Number(f.properties.DATE_BUILT)),
+      getLineColor: f => [255,255,255],
+
+      pickable: true,
+      onHover: updateTooltip
+    });
+
+    new DeckGL({
+      mapboxApiAccessToken: 'pk.eyJ1IjoiamF4c29uY2h5IiwiYSI6ImNqc3NucGRoYTA4cHIzenBnYm5jcjY2Z2cifQ.14H9_QjGFS-DeMtdtjLOZg',
+      mapStyle: 'mapbox://styles/mapbox/light-v9',
+      latitude: 49.26,
+      longitude: -123.245,
+      zoom: 13,
+      maxZoom: 17,
+      pitch: 45,
+      layers: [geojsonLayer]
+    });
+		
+    function colorScale(x) {
+      const i = Math.round(x/100000);
+      if (x > 0) {
+        return COLOR_SCALE[i] || COLOR_SCALE[0]; 
+      }
+      return COLOR_SCALE[i] || COLOR_SCALE[COLOR_SCALE.length - 1];
+    }
+    function updateTooltip({x, y, object}) {
+      const tooltip = document.getElementById('tooltip');
+
+      if (object) {
+        tooltip.style.top = `${y}px`;
+        tooltip.style.left = `${x}px`;
+        tooltip.innerHTML = `
+    <div><b>Average Property Value &nbsp;</b></div>
+    <div><div>${object.properties.valuePerSqm} / m<sup>2</sup></div></div>
+    <div><b>DATE_BUILT</b></div>
+    <div>${Math.round(object.properties.DATE_BUILT)}</div>
+    `;
+      } else { 
+        tooltip.innerHTML = '';
+      }
+    }
+
+  </script>
+
+</body></html>
