@@ -1,18 +1,17 @@
-## A Wondering Ball in City, a Unity 3D tour map. 
+## A Wondering Ball in City, a Unity 3D map. 
 
-### What about this game… 
+### What about this 3D tour map… 
 
-![alt text][logo]
 
-[logo]:https://github.com/JacksonCHY/JacksonCHY-web/blob/master/GameIn3D(Lab3)/excerpt1.png"
+
+![alt text](https://github.com/JacksonCHY/JacksonCHY-web/blob/master/GameIn3D(Lab3)/excerpt1.png)
 ###### Excerpt 1. The Interface
 
 ![alt text](https://github.com/JacksonCHY/JacksonCHY-web/blob/master/GameIn3D(Lab3)/excerpt2.png)
 ###### Excerpt 2. The Cube Marker
 
-
-![alt text](https://github.com/JacksonCHY/JacksonCHY-web/blob/master/GameIn3D(Lab3)/excerpt2.png)
-###### Excerpt 2. The Wall
+![alt text](https://github.com/JacksonCHY/JacksonCHY-web/blob/master/GameIn3D(Lab3)/excerpt3.png)
+###### Excerpt 3. The Wall
 
 #### Reflective Analysis: 
 ##### Who did I design the guiding map for?
