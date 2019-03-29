@@ -4,9 +4,9 @@
 
 ![alt text][logo]
 
-[logo]:https://github.com/JacksonCHY/JacksonCHY-web/blob/master/Interactive%20Mapping%20(Lab%202)/Overview.png "Public Library Finder for Vancouver Public Schools"
-###### Figure 1. Overview of the Public Library Finder
-Destination 
+[logo]:https://github.com/JacksonCHY/JacksonCHY-web/blob/master/GameIn3D(Lab3)/excerpt1.png"
+###### Excerpt 1. The Interface
+
 #### Reflective Analysis: 
 ##### Who did I design the guiding map for?
 Have you noticed the Sci-Fi movie scene? In this assignment, I intended to construct a guide touring map for future city/cities. Imagine the “wondering ball” as the player in the map that brings you to check out what is interesting about the place. The floating “cubes” would then represent a landmark or an attraction, and when our player hit it may stop and a pop-up window may show with a brief description. I also construct walls around to illustrate the city limits. A counter on the top of the screen shows the number of points that the player has visited. 
