@@ -3,7 +3,6 @@
 ### What about this 3D tour map… 
 
 
-
 ![alt text](https://github.com/JacksonCHY/JacksonCHY-web/blob/master/GameIn3D(Lab3)/excerpt1.png)
 ###### Excerpt 1. The Interface
 
@@ -16,8 +15,8 @@ Have you noticed the Sci-Fi movie scene? In this assignment, I intended to const
 ##### In term of accomplishment & limitations?
 Although I’m a beginner in the Mapbox SDK and Unity which kind of limits my hand to realizing some crazy ideas in mind. In this assignment, I use this opportunity to learn and try out new features in the software as much as possible. To give a third-person view of the players, I placed the main camera with the “wondering ball” object and manipulate the camera angle, so the scene is enabled to follow the player in the middle of the screen. For the background design, I modified the Mapbox base map style as well as the building into transparent structures. Therefore, the buildings will not hinder map users view but also set a futuristic setting of the city. On the other hand, player control script and the “immediate position with Location Provider” script makes our object following the path of streets. To a great extent, they prevent the player from “crush” into buildings. 
 
-![alt text](https://github.com/JacksonCHY/JacksonCHY-web/blob/master/GameIn3D(Lab3)/excerpt2.png)
-###### Excerpt 2. The Cube Marker
+![alt text](https://github.com/JacksonCHY/JacksonCHY-web/blob/master/GameIn3D(Lab3)/excerpt4.png)
+###### Excerpt 3. The Wall
 However, the guiding map has few other issues left behind unsolved. Even though I create the “cubes” and “walls” as markers, the collider C# code failed to work. Thus the ball can still penetrate through the structures and the cube markers did not vanish when the player went through them. Also, the SDK plug-in may not support pop-up windows which reduce the interactivity. I tried to put down the menu, direction control, and a droid button by downloading packages from the Asset Store. Yet coding errors and unmatched version (some tutorials required 1.4v or lower version) became my primary obstacle to building these interesting gadgets. 
 
 #### Collaborations and reliance on other resources
