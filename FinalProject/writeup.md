@@ -1,18 +1,9 @@
 # The Travels of Marco Polo
 #### GEOB 472: Research in Cartography
-Three or more...
+##### Iris J. Carolina W. Jackson C.
 
 ---
 
-Hyphens
-
-***
-
-Asterisks
-
-___
-
-Underscores
 ## Background
 ### Who is Marco Polo?
 
@@ -29,12 +20,17 @@ The dispute of Marco Polo’s Journey provoked our interests to further delve in
 #### *We are questioning:*
 ### **How does the academy community studies the Yuan Dynasty on behalf of whether Marco Polo went to China?**
 
+---
+
 ## Research Objective and Methodology
 
 In order to thoroughly address the question above, the research strives to orchestrate a scholarly discussion between the advocators and the contestants. To better illustrate a full picture of Marco’s adventure, our approaches coincide both literature review and narrative cartography. In addition to the Travel of Marco Polo, the Venetian, three other accounts we mainly examined are Francis Wood’s Did Marco Polo go to China?, Hans Ulrich Vogel’s Marco Polo Was in China – New Evidence from Currencies, Salts, and Revenues, and finally the Marco Polo and Yuan China by Ma Xiaolin. 
 
 In terms of visualization, various mapping techniques enriched the story-telling experience. The result products including an animated itinerary (Mapbox), reference maps that marked about the Marco's stay in China (Adobe Illustrator) as well as an immersive reality model of a conceptual Yuan settlement (A-Frame). These diverse cartographic representations and narrations not only contribute to audiences’ interpretations of the ancient places but a chance to investigate the reliability of Marco Polo’s travel.
 
+---
+
+## Result and Discussion
 ### Marco Polo's Travel Map 
 
 The route and stops are drawn based on the order of cities mentioned in the Description of the World.
@@ -80,6 +76,8 @@ Although it is unclear whether Marco Polo noticed the calligraphy on the paper m
 ##### Against
 There are few references of women in “Description of the World”, but no mention of women foot-binding practice. This practice “became popular amongst the upper classes during the Song dynasty (960-1279) when small girls had their toes bent under the soles of their feet and tied with wet bandages to create a small, pointed foot (Wood, 1996). Friar Odoric Pordenone, who traveled in China from 1320 and recorded his journey in 1330, describes the foot-binding practice in Southern China. It does seem inconceivable that fashions could have changed so rapidly within fifty years that Marco Polo did not encounter bounded feet, however, the latter one who has a short stay spotted this practice.
 
+---
+
 ## Conclusion
 
 ### Implication
@@ -87,3 +85,14 @@ In the beginning, our research intended to examine the findings of both the pros
 
 ### Conclusion
 Drawing from various scholarly accounts, the study achieved in construct an open-ended conversation on the journey of Marco Polo. Review of the three major literature allows us to understand major academic discourses about whether Marco Polo had actually left for China. Our analyses inquired the locations discussed in the origin work as well as cultural-significant elements such as tea, calligraphy, currency, and foot-binding practices. In addition to the text component, the research is further consolidated by implementing multiple cartographic techniques. We first created an animated map to illustrate the overview route of Polo’s trips; the mid-scale point-based maps give audiences a better resolution on which cities did Polo has visited according to his own account; last but most importantly, the 3D city model aims to restore the life and urban environment in Yuan Dynasty. Through utilizing several web-mapping tools, we are able to construct a vivid presentation of ancient China, and at the same time, incorporating diverse perspectives stem from academia in China and overseas into the study.
+
+##### References:
+Cohn, P. (2014). Exploring the Truth: 10 Facts on the Real Marco Polo. Retrieved from https://www.biography.com/news/marco-polo-facts-netflix-series
+Huang, S (1993) guānyú chá zài běi yà hé xīyù de zǎoqí chuánbò——jiān shuō mǎkěbōluó wèi yǒu jì chá. [on the early spread of tea in North Asia and the Western Regions - also said that Marco Polo has not recorded tea]. A Study of History, (1), 141-145
+Ma, X. (2018). Ma ke bo luo yu yuan dai zhong guo wen ben yu li su. [Marco Polo and Yuan China - In the Light of Texts , Rituals and Beliefs]. Shanghai: Shanghai Century Publishing(Group) Co., Ltd .
+Polo, the Venetian. Retrieved from http://gdc.galegroup.com.ezproxy.library.ubc.ca/gdc/ncco/MonographsDetailsPage/MonographsDetailsWindow?disableHighlighting=&displayGroupName=DVI-Monographs&docIndex=&source=&prodId=&sid=&mode=view&limiter=&display-query=&contentModules=&action=e&sortBy=&windowstate=normal&currPage=&dviSelectedPage=&scanId=&query=&search_within_results=&p=NCCO&catId=&u=ubcolumbia&displayGroups=&documentId=GALE|CXSJVW050765399&activityType=&failOverType=&commentary=
+Peters, E., & Maraini, F. (2019). Marco Polo. Retrieved from https://www.britannica.com/biography/Marco-Polo
+Vogel, H. U., & Ebooks Corporation. (2013;2012;). Marco polo was in china: New evidence from currencies, salts and revenues. Leiden;Boston;: Brill.
+Xiao, M. (2012). The Travels of Marco Polo. (Polo, M., Trans.). Xi’an. Shaanxi: Shanxi People’s Publication. (Original work published 1908)
+Haeger, J. W. (1978). Marco Polo in China? Problems with internal evidence. Bulletin of Sung and Yüan Studies, (14), 22-30.
+Wood, F. (1996). Did Marco Polo Go to China?. Asian Affairs, 27(3), 296-304.​
