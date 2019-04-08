@@ -1,6 +1,18 @@
 # The Travels of Marco Polo
 #### GEOB 472: Research in Cartography
+Three or more...
 
+---
+
+Hyphens
+
+***
+
+Asterisks
+
+___
+
+Underscores
 ## Background
 ### Who is Marco Polo?
 
@@ -14,8 +26,8 @@ Despite the detailed narrative of what he witnessed, some readers and historians
 
 The dispute of Marco Polo’s Journey provoked our interests to further delve into the historical mystery. 
 
-#### We are questioning:
-### How does the academy community studies the Yuan Dynasty on behalf of whether Marco Polo went to China?
+#### *We are questioning:*
+### **How does the academy community studies the Yuan Dynasty on behalf of whether Marco Polo went to China?**
 
 ## Research Objective and Methodology
 
