@@ -86,7 +86,9 @@ In the beginning, our research intended to examine the findings of both the pros
 ### Conclusion
 Drawing from various scholarly accounts, the study achieved in construct an open-ended conversation on the journey of Marco Polo. Review of the three major literature allows us to understand major academic discourses about whether Marco Polo had actually left for China. Our analyses inquired the locations discussed in the origin work as well as cultural-significant elements such as tea, calligraphy, currency, and foot-binding practices. In addition to the text component, the research is further consolidated by implementing multiple cartographic techniques. We first created an animated map to illustrate the overview route of Polo’s trips; the mid-scale point-based maps give audiences a better resolution on which cities did Polo has visited according to his own account; last but most importantly, the 3D city model aims to restore the life and urban environment in Yuan Dynasty. Through utilizing several web-mapping tools, we are able to construct a vivid presentation of ancient China, and at the same time, incorporating diverse perspectives stem from academia in China and overseas into the study.
 
-##### References:
+---
+
+### References:
 Cohn, P. (2014). Exploring the Truth: 10 Facts on the Real Marco Polo. Retrieved from https://www.biography.com/news/marco-polo-facts-netflix-series
 Huang, S (1993) guānyú chá zài běi yà hé xīyù de zǎoqí chuánbò——jiān shuō mǎkěbōluó wèi yǒu jì chá. [on the early spread of tea in North Asia and the Western Regions - also said that Marco Polo has not recorded tea]. A Study of History, (1), 141-145
 Ma, X. (2018). Ma ke bo luo yu yuan dai zhong guo wen ben yu li su. [Marco Polo and Yuan China - In the Light of Texts , Rituals and Beliefs]. Shanghai: Shanghai Century Publishing(Group) Co., Ltd .
