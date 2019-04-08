@@ -32,8 +32,8 @@ In terms of visualization, various mapping techniques enriched the story-telling
 ### Marco Polo's Travel Map 
 
 The route and stops are drawn based on the order of cities mentioned in the Description of the World.
-*#R24 means 24th stop in return trip.
-*Click on the markers to see the pop-up stop names and double click for zoom-in.
+* #R24 means 24th stop in return trip.
+* Click on the markers to see the pop-up stop names and double click for zoom-in.
 
 ### Chinese Cities in the Eye of Marco Polo
 
