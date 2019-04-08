@@ -13,9 +13,7 @@ In nowadays, people often reach to a consensus on who is the first European trav
 
 Unfortunately, the war was breaking out between Venice and the city-state of Genoa soon after his arrival. During a sea battle, Polo’s fleet was captured by the enemy and throw into jail later on (Cohn, 2014). The Description of the World, more commonly known by the Travel of Marco Polo, was composed in the midst of the imprisonment. Polo’s cellmate, Rustichello da Pisa, a romantic writer was invited to transcribe the oral story into an old French manuscript. The book then became the first and most prominent account at the period for the European to study the oriental civilization.
 
-Despite the detailed narrative of what he witnessed, some readers and historians continue suspicious about the story’s accuracy and questioning whether Polo has ever visited China. Several novelties such as paper currency, coal burning, and salt production have noted in the original work (Polo & Masefield, 1908). However, the story omits some everyday matters like the tea culture, Chinese Calligraphy, as well as the famous Great Wall (Wood, 2010). Skeptics presume that the Italian merchant may elaborate the tale from anecdotes heard from the traders who often conducting businesses along the silk road (Xiao, 2012).
-
-The dispute of Marco Polo’s Journey provoked our interests to further delve into the historical mystery. 
+Despite the detailed narrative of what he witnessed, some readers and historians continue suspicious about the story’s accuracy and questioning whether Polo has ever visited China. Several novelties such as paper currency, coal burning, and salt production have noted in the original work (Polo & Masefield, 1908). However, the story omits some everyday matters like the tea culture, Chinese Calligraphy, as well as the famous Great Wall (Wood, 2010). Skeptics presume that the Italian merchant may elaborate the tale from anecdotes heard from the traders who often conducting businesses along the silk road (Xiao, 2012). The dispute of Marco Polo’s Journey provoked our interests to further delve into the historical mystery. 
 
 #### *We are questioning:*
 ### **How does the academy community studies the Yuan Dynasty on behalf of whether Marco Polo went to China?**
@@ -34,7 +32,7 @@ In terms of visualization, various mapping techniques enriched the story-telling
 ### Marco Polo's Travel Map 
 
 The route and stops are drawn based on the order of cities mentioned in the Description of the World.
-* #R24 means 24th stop in return trip.
+*#R24 means 24th stop in return trip.
 *Click on the markers to see the pop-up stop names and double click for zoom-in.
 
 ### Chinese Cities in the Eye of Marco Polo
